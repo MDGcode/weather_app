@@ -1,7 +1,5 @@
 "use client";
 
-import { BsSearch } from "react-icons/bs";
-
 interface InputProps {
   handleSearch: (event: React.KeyboardEvent<HTMLInputElement>) => void;
   setLocation: React.Dispatch<React.SetStateAction<string>>;
@@ -16,9 +14,7 @@ const Input = ({ handleSearch, setLocation }: InputProps) => {
         onChange={(event) => setLocation(event.target.value)}
         className="w-full bg-transparent border-b-2 placeholder-white outline-none text-white"
       />
-      <div className=" ml-[-25px] text-white cursor-pointer">
-        <BsSearch />
-      </div>
+      <div className=" ml-[-25px] text-white cursor-pointer"></div>
     </form>
   );
 };
