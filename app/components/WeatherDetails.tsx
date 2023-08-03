@@ -33,7 +33,7 @@ const WeatherDetails = ({ data }: WeatherDetailsProps) => {
         <h1 className="mb-4 text-2xl text-white">Weather Details</h1>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-white/50 flex p-4 items-center justify-center gap-6 rounded-xl">
-            <div className="text-2xl px-5">
+            <div className="text-2xl">
               <h3>Feels like</h3>
               <h3>
                 {data.current.feelslike_c}{" "}
@@ -65,7 +65,7 @@ const WeatherDetails = ({ data }: WeatherDetailsProps) => {
             </div>
           </div>
           <div className="bg-white/50 flex p-4 items-center justify-center gap-6 rounded-xl">
-            <div className="text-2xl px-5">
+            <div className="text-2xl">
               <h3>Humidity</h3>
               <h3>{data.current.humidity} %</h3>
             </div>
@@ -75,7 +75,7 @@ const WeatherDetails = ({ data }: WeatherDetailsProps) => {
           </div>
           {/**The last 2 boxes*/}
           <div className="bg-white/50 flex p-4 items-center justify-center gap-6 rounded-xl">
-            <div className="text-2xl px-4">
+            <div className="text-2xl">
               <h3>Air Pressure</h3>
               <h3>{data.current.pressure_mb} hPa</h3>
             </div>
@@ -84,7 +84,7 @@ const WeatherDetails = ({ data }: WeatherDetailsProps) => {
             </div>
           </div>
           <div className="bg-white/50 flex p-4 items-center justify-center gap-6 rounded-xl">
-            <div className="text-2xl px-6">
+            <div className="text-2xl">
               <h3>Visibility</h3>
               <h3>{data.current.vis_km} KM</h3>
             </div>
